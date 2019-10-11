@@ -46,7 +46,7 @@ fi
 
 msg="missing on your system"
 
-case "$1" in
+case $1 in
 --run)
   # Try to run requested program, and just exit if it succeeds.
   run=
