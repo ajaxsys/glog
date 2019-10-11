@@ -176,7 +176,7 @@ libglog_la_OBJECTS = $(am_libglog_la_OBJECTS) \
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
-am__v_lt_1 = 
+am__v_lt_1 =
 libglog_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(libglog_la_CXXFLAGS) \
 	$(CXXFLAGS) $(libglog_la_LDFLAGS) $(LDFLAGS) -o $@
@@ -315,11 +315,11 @@ am__v_P_1 = :
 AM_V_GEN = $(am__v_GEN_@AM_V@)
 am__v_GEN_ = $(am__v_GEN_@AM_DEFAULT_V@)
 am__v_GEN_0 = @echo "  GEN     " $@;
-am__v_GEN_1 = 
+am__v_GEN_1 =
 AM_V_at = $(am__v_at_@AM_V@)
 am__v_at_ = $(am__v_at_@AM_DEFAULT_V@)
 am__v_at_0 = @
-am__v_at_1 = 
+am__v_at_1 =
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/src
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -333,7 +333,7 @@ LTCXXCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 AM_V_CXX = $(am__v_CXX_@AM_V@)
 am__v_CXX_ = $(am__v_CXX_@AM_DEFAULT_V@)
 am__v_CXX_0 = @echo "  CXX     " $@;
-am__v_CXX_1 = 
+am__v_CXX_1 =
 CXXLD = $(CXX)
 CXXLINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
@@ -341,7 +341,7 @@ CXXLINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 AM_V_CXXLD = $(am__v_CXXLD_@AM_V@)
 am__v_CXXLD_ = $(am__v_CXXLD_@AM_DEFAULT_V@)
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
-am__v_CXXLD_1 = 
+am__v_CXXLD_1 =
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
@@ -351,7 +351,7 @@ LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CC = $(am__v_CC_@AM_V@)
 am__v_CC_ = $(am__v_CC_@AM_DEFAULT_V@)
 am__v_CC_0 = @echo "  CC      " $@;
-am__v_CC_1 = 
+am__v_CC_1 =
 CCLD = $(CC)
 LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
@@ -359,7 +359,7 @@ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
-am__v_CCLD_1 = 
+am__v_CCLD_1 =
 SOURCES = $(libglog_la_SOURCES) $(nodist_libglog_la_SOURCES) \
 	$(demangle_unittest_SOURCES) \
 	$(nodist_demangle_unittest_SOURCES) \
@@ -788,7 +788,7 @@ TEST_CFLAGS = $(GTEST_CFLAGS) $(GMOCK_CFLAGS) $(GFLAGS_CFLAGS) \
 
 # Libraries for our unittest.
 TEST_LIBS = $(GTEST_LIBS) $(GMOCK_LIBS) $(GFLAGS_LIBS)
-TESTS_ENVIRONMENT = 
+TESTS_ENVIRONMENT =
 check_SCRIPTS = logging_striplog_test_sh demangle_unittest_sh \
 	signalhandler_unittest_sh
 # Every time you add a unittest to check_SCRIPTS, add it here too
@@ -964,7 +964,7 @@ src/config.h: src/stamp-h1
 src/stamp-h1: $(top_srcdir)/src/config.h.in $(top_builddir)/config.status
 	@rm -f src/stamp-h1
 	cd $(top_builddir) && $(SHELL) ./config.status src/config.h
-$(top_srcdir)/src/config.h.in:  $(am__configure_deps) 
+$(top_srcdir)/src/config.h.in:  $(am__configure_deps)
 	($(am__cd) $(top_srcdir) && $(AUTOHEADER))
 	rm -f src/stamp-h1
 	touch $@
@@ -1037,7 +1037,7 @@ src/libglog_la-symbolize.lo: src/$(am__dirstamp) \
 src/libglog_la-signalhandler.lo: src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 
-libglog.la: $(libglog_la_OBJECTS) $(libglog_la_DEPENDENCIES) $(EXTRA_libglog_la_DEPENDENCIES) 
+libglog.la: $(libglog_la_OBJECTS) $(libglog_la_DEPENDENCIES) $(EXTRA_libglog_la_DEPENDENCIES)
 	$(AM_V_CXXLD)$(libglog_la_LINK) -rpath $(libdir) $(libglog_la_OBJECTS) $(libglog_la_LIBADD) $(LIBS)
 
 clean-noinstPROGRAMS:
@@ -1051,67 +1051,67 @@ clean-noinstPROGRAMS:
 src/demangle_unittest-demangle_unittest.$(OBJEXT):  \
 	src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
-demangle_unittest$(EXEEXT): $(demangle_unittest_OBJECTS) $(demangle_unittest_DEPENDENCIES) $(EXTRA_demangle_unittest_DEPENDENCIES) 
+demangle_unittest$(EXEEXT): $(demangle_unittest_OBJECTS) $(demangle_unittest_DEPENDENCIES) $(EXTRA_demangle_unittest_DEPENDENCIES)
 	@rm -f demangle_unittest$(EXEEXT)
 	$(AM_V_CXXLD)$(demangle_unittest_LINK) $(demangle_unittest_OBJECTS) $(demangle_unittest_LDADD) $(LIBS)
 src/logging_striptest0-logging_striptest_main.$(OBJEXT):  \
 	src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
-logging_striptest0$(EXEEXT): $(logging_striptest0_OBJECTS) $(logging_striptest0_DEPENDENCIES) $(EXTRA_logging_striptest0_DEPENDENCIES) 
+logging_striptest0$(EXEEXT): $(logging_striptest0_OBJECTS) $(logging_striptest0_DEPENDENCIES) $(EXTRA_logging_striptest0_DEPENDENCIES)
 	@rm -f logging_striptest0$(EXEEXT)
 	$(AM_V_CXXLD)$(logging_striptest0_LINK) $(logging_striptest0_OBJECTS) $(logging_striptest0_LDADD) $(LIBS)
 src/logging_striptest10-logging_striptest10.$(OBJEXT):  \
 	src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
-logging_striptest10$(EXEEXT): $(logging_striptest10_OBJECTS) $(logging_striptest10_DEPENDENCIES) $(EXTRA_logging_striptest10_DEPENDENCIES) 
+logging_striptest10$(EXEEXT): $(logging_striptest10_OBJECTS) $(logging_striptest10_DEPENDENCIES) $(EXTRA_logging_striptest10_DEPENDENCIES)
 	@rm -f logging_striptest10$(EXEEXT)
 	$(AM_V_CXXLD)$(logging_striptest10_LINK) $(logging_striptest10_OBJECTS) $(logging_striptest10_LDADD) $(LIBS)
 src/logging_striptest2-logging_striptest2.$(OBJEXT):  \
 	src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
-logging_striptest2$(EXEEXT): $(logging_striptest2_OBJECTS) $(logging_striptest2_DEPENDENCIES) $(EXTRA_logging_striptest2_DEPENDENCIES) 
+logging_striptest2$(EXEEXT): $(logging_striptest2_OBJECTS) $(logging_striptest2_DEPENDENCIES) $(EXTRA_logging_striptest2_DEPENDENCIES)
 	@rm -f logging_striptest2$(EXEEXT)
 	$(AM_V_CXXLD)$(logging_striptest2_LINK) $(logging_striptest2_OBJECTS) $(logging_striptest2_LDADD) $(LIBS)
 src/logging_unittest-logging_unittest.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 
-logging_unittest$(EXEEXT): $(logging_unittest_OBJECTS) $(logging_unittest_DEPENDENCIES) $(EXTRA_logging_unittest_DEPENDENCIES) 
+logging_unittest$(EXEEXT): $(logging_unittest_OBJECTS) $(logging_unittest_DEPENDENCIES) $(EXTRA_logging_unittest_DEPENDENCIES)
 	@rm -f logging_unittest$(EXEEXT)
 	$(AM_V_CXXLD)$(logging_unittest_LINK) $(logging_unittest_OBJECTS) $(logging_unittest_LDADD) $(LIBS)
 src/mock_log_test-mock-log_test.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 
-mock_log_test$(EXEEXT): $(mock_log_test_OBJECTS) $(mock_log_test_DEPENDENCIES) $(EXTRA_mock_log_test_DEPENDENCIES) 
+mock_log_test$(EXEEXT): $(mock_log_test_OBJECTS) $(mock_log_test_DEPENDENCIES) $(EXTRA_mock_log_test_DEPENDENCIES)
 	@rm -f mock_log_test$(EXEEXT)
 	$(AM_V_CXXLD)$(mock_log_test_LINK) $(mock_log_test_OBJECTS) $(mock_log_test_LDADD) $(LIBS)
 src/signalhandler_unittest-signalhandler_unittest.$(OBJEXT):  \
 	src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
-signalhandler_unittest$(EXEEXT): $(signalhandler_unittest_OBJECTS) $(signalhandler_unittest_DEPENDENCIES) $(EXTRA_signalhandler_unittest_DEPENDENCIES) 
+signalhandler_unittest$(EXEEXT): $(signalhandler_unittest_OBJECTS) $(signalhandler_unittest_DEPENDENCIES) $(EXTRA_signalhandler_unittest_DEPENDENCIES)
 	@rm -f signalhandler_unittest$(EXEEXT)
 	$(AM_V_CXXLD)$(signalhandler_unittest_LINK) $(signalhandler_unittest_OBJECTS) $(signalhandler_unittest_LDADD) $(LIBS)
 src/stacktrace_unittest-stacktrace_unittest.$(OBJEXT):  \
 	src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
-stacktrace_unittest$(EXEEXT): $(stacktrace_unittest_OBJECTS) $(stacktrace_unittest_DEPENDENCIES) $(EXTRA_stacktrace_unittest_DEPENDENCIES) 
+stacktrace_unittest$(EXEEXT): $(stacktrace_unittest_OBJECTS) $(stacktrace_unittest_DEPENDENCIES) $(EXTRA_stacktrace_unittest_DEPENDENCIES)
 	@rm -f stacktrace_unittest$(EXEEXT)
 	$(AM_V_CXXLD)$(stacktrace_unittest_LINK) $(stacktrace_unittest_OBJECTS) $(stacktrace_unittest_LDADD) $(LIBS)
 src/stl_logging_unittest-stl_logging_unittest.$(OBJEXT):  \
 	src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
-stl_logging_unittest$(EXEEXT): $(stl_logging_unittest_OBJECTS) $(stl_logging_unittest_DEPENDENCIES) $(EXTRA_stl_logging_unittest_DEPENDENCIES) 
+stl_logging_unittest$(EXEEXT): $(stl_logging_unittest_OBJECTS) $(stl_logging_unittest_DEPENDENCIES) $(EXTRA_stl_logging_unittest_DEPENDENCIES)
 	@rm -f stl_logging_unittest$(EXEEXT)
 	$(AM_V_CXXLD)$(stl_logging_unittest_LINK) $(stl_logging_unittest_OBJECTS) $(stl_logging_unittest_LDADD) $(LIBS)
 src/symbolize_unittest-symbolize_unittest.$(OBJEXT):  \
 	src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
-symbolize_unittest$(EXEEXT): $(symbolize_unittest_OBJECTS) $(symbolize_unittest_DEPENDENCIES) $(EXTRA_symbolize_unittest_DEPENDENCIES) 
+symbolize_unittest$(EXEEXT): $(symbolize_unittest_OBJECTS) $(symbolize_unittest_DEPENDENCIES) $(EXTRA_symbolize_unittest_DEPENDENCIES)
 	@rm -f symbolize_unittest$(EXEEXT)
 	$(AM_V_CXXLD)$(symbolize_unittest_LINK) $(symbolize_unittest_OBJECTS) $(symbolize_unittest_LDADD) $(LIBS)
 src/utilities_unittest-utilities_unittest.$(OBJEXT):  \
 	src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
-utilities_unittest$(EXEEXT): $(utilities_unittest_OBJECTS) $(utilities_unittest_DEPENDENCIES) $(EXTRA_utilities_unittest_DEPENDENCIES) 
+utilities_unittest$(EXEEXT): $(utilities_unittest_OBJECTS) $(utilities_unittest_DEPENDENCIES) $(EXTRA_utilities_unittest_DEPENDENCIES)
 	@rm -f utilities_unittest$(EXEEXT)
 	$(AM_V_CXXLD)$(utilities_unittest_LINK) $(utilities_unittest_OBJECTS) $(utilities_unittest_LDADD) $(LIBS)
 
